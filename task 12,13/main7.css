@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    background-image: url(./images/background.png);
+}
+
+
+/* start navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    color: white;
+    padding-inline: 3em ;
+}
+
+nav ul {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .icons{
+    display: flex;
+    gap: 1em;
+}
+
+nav .icons i{
+width: 30px ;
+height: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:767px) {
+    nav ul{
+     display: none;   
+    }
+   
+}
+
+
+/* end navbar */
+
+/* start banner */
+
+.banner {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #1d1d1e;
+    }
+    
+    .banner img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .banner .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    
+    }
+
+    
+    .overlay .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        color: #ffffffa4;
+        cursor: pointer;
+    }
+    .overlay .text h2{
+    font-weight: 500px;
+    font-size: 2em;
+    }
+    
+    .overlay .active{
+        color: white;
+    }
+/* end banner */
+
+/* start txt */
+ .txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 1em;
+    margin: 3em ;
+    text-transform: uppercase;
+}
+
+ .txt h6{
+    font-size: 15px;
+    font-weight: 500px;
+    line-height: 30px;
+}
+
+.txt h3{
+    font-size: 30px;
+    font-weight: 700px;
+}
+
+/* end .txt */
+
+/* start contact*/
+
+.contact {
+    background-color:#1D1D1D ;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    padding: 7em;
+}
+
+
+.contact .numbers {
+  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.contact .numbers .joe , .num , .sub {
+    /* width: 300px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   gap: 2em;
+   border: 2px solid white;
+   border-radius: 13px;
+   padding: .5em;
+   padding-inline: 2em;
+   color: #fff;
+   cursor: pointer;
+}
+
+.contact .numbers .joe {
+    border: 2px solid #D62828;
+}
+
+.contact  i{
+    color: #D62828;
+}
+
+
+.contact  .message  textarea{
+    
+    background-color: #1D1D1D;
+    color: #fff;
+   width: 920px;
+   height:50vh ;
+   margin: 2em;
+   border-radius: 15px;
+   border: 2px solid white;
+}
+
+
+.contact textarea::placeholder{
+    padding: 2em;
+    color: #FFFFFF80;
+}
+
+
+.send{
+    width: 300px;
+margin-inline: 1.5em;
+   border: 2px solid white;
+   border-radius: 13px;
+   padding: .5em;
+   padding-inline: 2em;
+   color: #fff;
+   cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .contact{
+        width: 100%;
+    }
+    .contact .numbers {
+        width: calc((100% - 1em)/1);
+        
+    }
+}
+
+/* end content */
+
+/* start footer */
+
+footer{
+    margin: 5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    color: #D62828;
+}
+
+/* end footer */

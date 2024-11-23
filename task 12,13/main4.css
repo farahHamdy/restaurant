@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    background-image: url(./images/background.png);
+}
+
+
+/* start navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    color: white;
+    padding-inline: 3em ;
+}
+
+nav ul {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .icons{
+    display: flex;
+    gap: 1em;
+}
+
+nav .icons i{
+width: 30px ;
+height: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    nav ul{
+     display: none;   
+    }
+   
+}
+
+
+/* end navbar */
+
+/* start banner */
+
+.banner {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #1d1d1e;
+    }
+    
+    .banner img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .banner .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    
+    }
+
+    
+    .overlay .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        color: #ffffffa4;
+        cursor: pointer;
+    }
+    .overlay .text h2{
+    font-weight: 500px;
+    font-size: 2em;
+    }
+    
+    .overlay .active{
+        color: white;
+    }
+/* end banner */
+
+/* start carts 
+start items  */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.carts h2{
+    margin: 1em;
+    color: white;
+}
+.carts .items .cart {
+    margin: 1em;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+   padding: 1em;
+}
+
+.carts .items .cart .text {
+    padding: .5em;
+    line-height: 2em;
+}
+
+.carts .items .cart .text .price{
+    color: #D62828;
+}
+
+.carts .items .cart .text .txt {
+    display: flex;
+ gap: 1em;
+ justify-content: space-between;
+ 
+
+}
+
+.carts .items .cart .text .txt h4{
+    font-weight: 300;
+}
+
+.carts .items .cart .text .txt .count{
+    display: flex;
+    gap: .5em;
+    
+}
+
+.count .minus_plus{
+width: 25px;
+height: 25px;
+   border: 1.5px solid white;
+   border-radius: 3px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.carts .items .cart img{
+    width: 150px;
+height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* end items  */
+
+/* start box_total */
+
+.box_total{
+  width: 25%;
+  height: 30vh;
+    margin-block: 5em;
+    margin-inline: 1em;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.box_total .total{
+    display: flex;
+    justify-content: space-between;
+}
+.box_total .shipping{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box_total button{
+    width: 270px;
+    height: 8vh;
+    border-radius: 10px;
+    border: 1px white solid;
+    overflow: hidden;
+    background-color: #D62828;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width:767px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container .box_total{
+        width: 95%;
+    }
+}
+
+/* end box_total */
+
+ /* start footer */
+
+ footer{
+    margin: 5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    color: #D62828;
+}
+
+/* end footer */
